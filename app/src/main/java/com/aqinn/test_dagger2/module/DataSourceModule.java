@@ -3,6 +3,8 @@ package com.aqinn.test_dagger2.module;
 import com.aqinn.test_dagger2.manager.DataSource;
 import com.aqinn.test_dagger2.manager.MyDataSource;
 
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -13,6 +15,7 @@ import dagger.Provides;
 @Module
 public class DataSourceModule {
 
+    @Singleton
     @Provides
     DataSource provideDataSource() {
         return new MyDataSource();

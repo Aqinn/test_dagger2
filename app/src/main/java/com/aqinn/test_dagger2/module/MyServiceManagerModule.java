@@ -4,6 +4,8 @@ import com.aqinn.test_dagger2.manager.DataSource;
 import com.aqinn.test_dagger2.manager.MyServiceManager;
 import com.aqinn.test_dagger2.manager.ShowManager;
 
+import javax.inject.Singleton;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -14,6 +16,7 @@ import dagger.Provides;
 @Module
 public class MyServiceManagerModule {
 
+    @Singleton
     @Provides
     MyServiceManager provideMyServiceManager() {
         return new MyServiceManager();

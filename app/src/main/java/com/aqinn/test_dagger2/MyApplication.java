@@ -4,17 +4,12 @@ import android.app.Application;
 
 import com.aqinn.test_dagger2.component.ApplicationComponent;
 import com.aqinn.test_dagger2.component.DaggerApplicationComponent;
-import com.aqinn.test_dagger2.component.DaggerDataSourceComponent;
-import com.aqinn.test_dagger2.component.DaggerMyServiceManagerComponent;
-import com.aqinn.test_dagger2.component.DaggerShowManagerComponent;
 import com.aqinn.test_dagger2.component.DataSourceComponent;
 import com.aqinn.test_dagger2.component.MyServiceManagerComponent;
 import com.aqinn.test_dagger2.component.ShowManagerComponent;
-
-
-
-
-
+import com.aqinn.test_dagger2.module.DataSourceModule;
+import com.aqinn.test_dagger2.module.MyServiceManagerModule;
+import com.aqinn.test_dagger2.module.ShowManagerModule;
 
 
 /**
@@ -25,20 +20,14 @@ public class MyApplication extends Application {
 
     private static final String TAG_SINGLE = "singleTest";
     private static ApplicationComponent applicationComponent;
-    private static DataSourceComponent dataSourceComponent;
-    private static MyServiceManagerComponent myServiceManagerComponent;
-    private static ShowManagerComponent showManagerComponent;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        dataSourceComponent = DaggerDataSourceComponent.create();
-        showManagerComponent = DaggerShowManagerComponent.create();
-        myServiceManagerComponent = DaggerMyServiceManagerComponent.create();
         applicationComponent = DaggerApplicationComponent.builder()
-                .dataSourceComponent(dataSourceComponent)
-                .showManagerComponent(showManagerComponent)
-                .myServiceManagerComponent(myServiceManagerComponent)
+                .dataSourceModule(new DataSourceModule())
+                .showManagerModule(new ShowManagerModule())
+                .myServiceManagerModule(new MyServiceManagerModule())
                 .build();
     }
 
