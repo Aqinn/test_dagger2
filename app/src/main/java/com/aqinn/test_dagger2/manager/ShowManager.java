@@ -1,8 +1,9 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.manager;
 
 import android.util.Log;
 
-import javax.inject.Inject;
+import com.aqinn.test_dagger2.CommonUtil;
+import com.aqinn.test_dagger2.MyApplication;
 
 /**
  * @Author Aqinn

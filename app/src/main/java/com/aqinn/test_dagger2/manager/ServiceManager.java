@@ -1,4 +1,4 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.manager;
 
 /**
  * @Author Aqinn

@@ -1,4 +1,8 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.module;
+
+import com.aqinn.test_dagger2.manager.DataSource;
+import com.aqinn.test_dagger2.manager.MyServiceManager;
+import com.aqinn.test_dagger2.manager.ShowManager;
 
 import dagger.Module;
 import dagger.Provides;

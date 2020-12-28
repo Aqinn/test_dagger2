@@ -1,4 +1,7 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.component;
+
+import com.aqinn.test_dagger2.manager.MyServiceManager;
+import com.aqinn.test_dagger2.module.MyServiceManagerModule;
 
 import dagger.Component;
 

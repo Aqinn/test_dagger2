@@ -2,6 +2,16 @@ package com.aqinn.test_dagger2;
 
 import android.app.Application;
 
+import com.aqinn.test_dagger2.component.ApplicationComponent;
+import com.aqinn.test_dagger2.component.DaggerApplicationComponent;
+import com.aqinn.test_dagger2.component.DaggerDataSourceComponent;
+import com.aqinn.test_dagger2.component.DaggerMyServiceManagerComponent;
+import com.aqinn.test_dagger2.component.DaggerShowManagerComponent;
+import com.aqinn.test_dagger2.component.DataSourceComponent;
+import com.aqinn.test_dagger2.component.MyServiceManagerComponent;
+import com.aqinn.test_dagger2.component.ShowManagerComponent;
+
+
 /**
  * @author Aqinn
  * @date 2020/12/28 2:58 AM

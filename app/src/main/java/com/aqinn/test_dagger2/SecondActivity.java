@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.aqinn.test_dagger2.manager.DataSource;
+import com.aqinn.test_dagger2.manager.MyServiceManager;
+
 import javax.inject.Inject;
 
 public class SecondActivity extends AppCompatActivity {

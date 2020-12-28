@@ -1,6 +1,7 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.component;
 
-import javax.inject.Singleton;
+import com.aqinn.test_dagger2.manager.ShowManager;
+import com.aqinn.test_dagger2.module.ShowManagerModule;
 
 import dagger.Component;
 

@@ -1,4 +1,9 @@
-package com.aqinn.test_dagger2;
+package com.aqinn.test_dagger2.component;
+
+import com.aqinn.test_dagger2.MainActivity;
+import com.aqinn.test_dagger2.manager.MyServiceManager;
+import com.aqinn.test_dagger2.SecondActivity;
+import com.aqinn.test_dagger2.manager.ShowManager;
 
 import dagger.Component;
 
