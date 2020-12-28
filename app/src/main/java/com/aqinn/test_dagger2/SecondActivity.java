@@ -26,8 +26,8 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(MyApplication.getTagSingle(), "SecondActivity: dataSource => " + dataSource);
-        Log.d(MyApplication.getTagSingle(), "SecondActivity: myServiceManager => " + myServiceManager);
+        Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("SecondActivity", "dataSource", dataSource));
+        Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("SecondActivity", "myServiceManager", myServiceManager));
         startActivity(new Intent(this, MainActivity.class));
     }
 }

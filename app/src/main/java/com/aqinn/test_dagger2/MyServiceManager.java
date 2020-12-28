@@ -18,9 +18,8 @@ public class MyServiceManager implements ServiceManager{
     public MyServiceManager(DataSource dataSource, ShowManager showManager) {
         this.dataSource = dataSource;
         this.showManager = showManager;
-//        MyApplication.getApplicationComponent().inject(this);
-        Log.d(MyApplication.getTagSingle(), "MyServiceManager: dataSource => " + dataSource);
-        Log.d(MyApplication.getTagSingle(), "MyServiceManager: showManager => " + showManager);
+        Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("MyServiceManager", "dataSource", dataSource));
+        Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("MyServiceManager", "showManager", showManager));
     }
 
 }

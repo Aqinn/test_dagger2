@@ -6,7 +6,6 @@ import dagger.Component;
  * @author Aqinn
  * @date 2020/12/28 4:19 AM
  */
-@ApplicationScope
 @Component(dependencies = {DataSourceComponent.class, ShowManagerComponent.class, MyServiceManagerComponent.class})
 public interface ApplicationComponent {
 

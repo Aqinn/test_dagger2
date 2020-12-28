@@ -8,7 +8,6 @@ import dagger.Component;
  * @Author Aqinn
  * @Date 2020/12/28 2:45 上午
  */
-@ApplicationScope
 @Component(modules = ShowManagerModule.class, dependencies = DataSourceComponent.class)
 public interface ShowManagerComponent {
 

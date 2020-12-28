@@ -8,7 +8,6 @@ import dagger.Component;
  * @Author Aqinn
  * @Date 2020/12/28 2:43 上午
  */
-@Singleton
 @Component(modules = DataSourceModule.class)
 public interface DataSourceComponent {
 

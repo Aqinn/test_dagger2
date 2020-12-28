@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if (!flag) {
-            Log.d(MyApplication.getTagSingle(), "MainActivity: dataSource => " + dataSource);
-            Log.d(MyApplication.getTagSingle(), "MainActivity: myServiceManager => " + myServiceManager);
+            Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("MainActivity", "dataSource", dataSource));
+            Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("MainActivity", "myServiceManager", myServiceManager));
             flag = true;
             startActivity(new Intent(this, SecondActivity.class));
         }

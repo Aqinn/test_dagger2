@@ -12,7 +12,6 @@ import dagger.Provides;
 @Module
 public class DataSourceModule {
 
-    @Singleton
     @Provides
     DataSource provideDataSource() {
         return new MyDataSource();

@@ -14,8 +14,7 @@ public class ShowManager {
 
     public ShowManager(DataSource dataSource) {
         this.dataSource = dataSource;
-//        MyApplication.getApplicationComponent().inject(this);
-        Log.d(MyApplication.getTagSingle(), "ShowManager: dataSource => " + dataSource);
+        Log.d(MyApplication.getTagSingle(), CommonUtil.getFormatLog("ShowManager", "dataSource", dataSource));
     }
 
 }
