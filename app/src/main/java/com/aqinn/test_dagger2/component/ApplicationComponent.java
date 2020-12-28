@@ -18,8 +18,4 @@ public interface ApplicationComponent {
 
     void inject(SecondActivity secondActivity);
 
-    void inject(ShowManager showManager);
-
-    void inject(MyServiceManager myServiceManager);
-
 }
