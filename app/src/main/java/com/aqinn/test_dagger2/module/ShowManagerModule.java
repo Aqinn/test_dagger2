@@ -14,8 +14,8 @@ import dagger.Provides;
 public class ShowManagerModule {
 
     @Provides
-    ShowManager provideShowManager(DataSource dataSource) {
-        return new ShowManager(dataSource);
+    ShowManager provideShowManager() {
+        return new ShowManager();
     }
 
 }

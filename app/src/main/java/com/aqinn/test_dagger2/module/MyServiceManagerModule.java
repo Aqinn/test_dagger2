@@ -15,8 +15,8 @@ import dagger.Provides;
 public class MyServiceManagerModule {
 
     @Provides
-    MyServiceManager provideMyServiceManager(DataSource dataSource, ShowManager showManager) {
-        return new MyServiceManager(dataSource, showManager);
+    MyServiceManager provideMyServiceManager() {
+        return new MyServiceManager();
     }
 
 }

@@ -12,6 +12,11 @@ import com.aqinn.test_dagger2.component.MyServiceManagerComponent;
 import com.aqinn.test_dagger2.component.ShowManagerComponent;
 
 
+
+
+
+
+
 /**
  * @author Aqinn
  * @date 2020/12/28 2:58 AM
@@ -28,11 +33,8 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         dataSourceComponent = DaggerDataSourceComponent.create();
-        showManagerComponent = DaggerShowManagerComponent.builder()
-                .dataSourceComponent(dataSourceComponent)
-                .build();
-        myServiceManagerComponent = DaggerMyServiceManagerComponent.builder()
-                .dataSourceComponent(dataSourceComponent).showManagerComponent(showManagerComponent).build();
+        showManagerComponent = DaggerShowManagerComponent.create();
+        myServiceManagerComponent = DaggerMyServiceManagerComponent.create();
         applicationComponent = DaggerApplicationComponent.builder()
                 .dataSourceComponent(dataSourceComponent)
                 .showManagerComponent(showManagerComponent)
